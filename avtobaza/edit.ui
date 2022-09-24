@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>edit</class>
+ <widget class="QDialog" name="edit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>762</width>
+    <height>223</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>741</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Автомобиль</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>281</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Панель администратора</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>256</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="1" column="1">
+        <widget class="QPushButton" name="delAvto">
+         <property name="text">
+          <string>Удалить</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="insertAvto">
+         <property name="text">
+          <string>Добавить</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="changeAvto">
+         <property name="text">
+          <string>Изменить</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="outFileAvto">
+         <property name="text">
+          <string>Скачать из файла</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>10</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID автомобиля</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_ID_avto">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>30</y>
+       <width>113</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>60</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID автобазы</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="CB_ID_avtobaza">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>80</y>
+       <width>111</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>110</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Сорт бензина</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="CB_FK_sort_benz">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>130</y>
+       <width>111</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>АИ92</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>АИ95</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>АИ98</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ДТ</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>10</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Модель</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_model">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>30</y>
+       <width>113</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>60</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Марка</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_marka">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>80</y>
+       <width>113</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>110</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Тип</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_type">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>130</y>
+       <width>113</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>10</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Гос. номер</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_gos_nomer">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>30</y>
+       <width>113</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>АЗС</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>281</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Панель администратора</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>256</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="1" column="1">
+        <widget class="QPushButton" name="delAZS">
+         <property name="text">
+          <string>Удалить</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="insertAZS">
+         <property name="text">
+          <string>Добавить</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="changeAZS">
+         <property name="text">
+          <string>Изменить</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="outFileAZS">
+         <property name="text">
+          <string>Скачать из файла</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>10</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID АЗС</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_ID_AZS">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>30</y>
+       <width>113</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>60</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Название</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_AZS_name">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>80</y>
+       <width>113</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>110</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Адрес</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_AZS_address">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>130</y>
+       <width>411</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>10</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Сорта бензина</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>60</y>
+       <width>101</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Состояние</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="CheckBox_isOpen">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>80</y>
+       <width>83</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Открыта</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_sorta_benzina">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>30</y>
+       <width>113</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>Автобаза</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>281</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Панель администратора</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>256</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="1" column="1">
+        <widget class="QPushButton" name="delAvtobaza">
+         <property name="text">
+          <string>Удалить</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="insertAvtobaza">
+         <property name="text">
+          <string>Добавить</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="changeAvtobaza">
+         <property name="text">
+          <string>Изменить</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="outFileAvtobaza">
+         <property name="text">
+          <string>Скачать из файла</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>10</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID автобазы</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_ID_avtobaza">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>30</y>
+       <width>113</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>60</y>
+       <width>111</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Телефон</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_number">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>80</y>
+       <width>113</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>110</y>
+       <width>55</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Адрес</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="LE_avtobaza_address">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>130</y>
+       <width>411</width>
+       <height>24</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

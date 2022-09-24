@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>look</class>
+ <widget class="QDialog" name="look">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>971</width>
+    <height>532</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>951</width>
+     <height>321</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>340</y>
+     <width>281</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>2</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>Автомобиль</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>281</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Панель пользователя</string>
+     </property>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>256</width>
+        <height>113</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="viewAvto">
+         <property name="text">
+          <string>Просмотреть</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="inFileAvto">
+         <property name="text">
+          <string>Выгрузить в файл</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="sortAvto">
+         <property name="text">
+          <string>Отсортировать</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="printAvto">
+         <property name="text">
+          <string>Вывести на печать</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Критерий сортировки</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QComboBox" name="CB_Avto_Columns">
+         <item>
+          <property name="text">
+           <string>ID автомобиля</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>ID автобазы</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Сорт бензина</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Модель</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Марка</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Тип</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Гос. номер</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>АЗС</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>281</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Панель пользователя</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>256</width>
+        <height>113</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="viewAZS">
+         <property name="text">
+          <string>Просмотреть</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="inFileAZS">
+         <property name="text">
+          <string>Выгрузить в файл</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="sortAZS">
+         <property name="text">
+          <string>Отсортировать</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="printAZS">
+         <property name="text">
+          <string>Вывести на печать</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Критерий сортировки</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QComboBox" name="CB_AZS_Columns">
+         <item>
+          <property name="text">
+           <string>ID АЗС</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Название</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Адрес</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Сорт бензина</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Состояние</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>Автобаза</string>
+    </attribute>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>281</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string>Панель пользователя</string>
+     </property>
+     <widget class="QWidget" name="layoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>30</y>
+        <width>256</width>
+        <height>113</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QPushButton" name="viewAvtobaza">
+         <property name="text">
+          <string>Просмотреть</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="inFileAvtobaza">
+         <property name="text">
+          <string>Выгрузить в файл</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="sortAvtobaza">
+         <property name="text">
+          <string>Отсортировать</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="printAvtobaza">
+         <property name="text">
+          <string>Вывести на печать</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="2">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Критерий сортировки</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QComboBox" name="CB_Avtobaza_Columns">
+         <item>
+          <property name="text">
+           <string>ID автобазы</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Номер</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Адрес</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

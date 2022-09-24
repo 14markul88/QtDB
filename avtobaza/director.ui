@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>director</class>
+ <widget class="QDialog" name="director">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>794</width>
+    <height>502</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTableWidget" name="DirectorTable">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>0</y>
+     <width>771</width>
+     <height>201</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>771</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Панель директора</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>747</width>
+      <height>229</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0" colspan="2">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Поиск АЗС для заправки авто:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" colspan="2">
+      <widget class="QLabel" name="label_10">
+       <property name="text">
+        <string>АЗС, обслуживающая максимальное количество автомобилей:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Марка:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string>Модель:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="certainAvto">
+       <property name="text">
+        <string>Найти</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="LE_marka_AZS_find"/>
+     </item>
+     <item row="2" column="2">
+      <widget class="QLineEdit" name="LE_model_AZS_find"/>
+     </item>
+     <item row="2" column="3">
+      <widget class="QPushButton" name="maxAvtoAZSCount">
+       <property name="text">
+        <string>Найти</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0" colspan="3">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>Сколько водителей &quot;Седанов&quot; заправляются &quot;ДТ&quot;:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3" colspan="2">
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Автомобили, заправляющиеся заданным сортом бензина:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QLabel" name="label_9">
+       <property name="text">
+        <string>Сорт бензина:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QPushButton" name="sedanDTcount">
+       <property name="text">
+        <string>Найти</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QPushButton" name="certainSortBenz">
+       <property name="text">
+        <string>Найти</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="4">
+      <widget class="QLineEdit" name="LE_marka_certain_sort"/>
+     </item>
+     <item row="6" column="0" colspan="3">
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Список АЗС, на которых отсутствует заданный сорт бензина:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3" colspan="2">
+      <widget class="QLabel" name="label_11">
+       <property name="text">
+        <string>Автобаза с максимальным количеством автомобилей:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>Сорт бензина:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QPushButton" name="sortAbsense">
+       <property name="text">
+        <string>Найти</string>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QLineEdit" name="LE_sortAbsense"/>
+     </item>
+     <item row="8" column="3">
+      <widget class="QPushButton" name="maxAvtoCount">
+       <property name="text">
+        <string>Найти</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
