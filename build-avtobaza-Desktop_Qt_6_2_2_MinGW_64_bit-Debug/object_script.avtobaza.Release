@@ -1,0 +1,11 @@
+release/autorize.o
+release/director.o
+release/edit.o
+release/look.o
+release/main.o
+release/mainwindow.o
+release/moc_autorize.o
+release/moc_director.o
+release/moc_edit.o
+release/moc_look.o
+release/moc_mainwindow.o

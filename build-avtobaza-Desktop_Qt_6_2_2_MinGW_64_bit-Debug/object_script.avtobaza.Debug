@@ -1,0 +1,11 @@
+debug/autorize.o
+debug/director.o
+debug/edit.o
+debug/look.o
+debug/main.o
+debug/mainwindow.o
+debug/moc_autorize.o
+debug/moc_director.o
+debug/moc_edit.o
+debug/moc_look.o
+debug/moc_mainwindow.o
